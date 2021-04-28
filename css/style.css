@@ -1,0 +1,30 @@
+body{
+    all: unset;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: center;
+    align-self: center; 
+}
+.carcasa{
+    height: 40em;
+    background-color: red;
+    flex-grow: 1;
+}
+#right{
+    background-color: blue;
+}
+#left{
+    background-color: green;
+}
+#center {
+    width: 20em;
+}
