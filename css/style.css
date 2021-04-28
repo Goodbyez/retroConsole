@@ -31,13 +31,9 @@ main{
 
 #firstPlate {
     width: 39.5em;
-    /*min-width: 90vmin;
-    max-width: 60vmax;*/
     height: 21.5em;
-    /*min-height: 20vmax;
-    max-height: 60vmin ;*/
     background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);
-    border-radius: 20px 20px;
+    border-radius: 1em 1em;
     border:  8px red;
     border-style: ridge groove;
     box-shadow: inset 0 0 30px 0 darkgoldenrod;
@@ -49,34 +45,24 @@ main{
 #center{
     box-sizing: border-box;
     display: flex;
-    background-color: rgba(172, 255, 47, 0.493);
+    background-color: blue;
     height: 100%;
-    width: 55%;
-
+    width: 22em;
 }
 
 #left{
     box-sizing: border-box;
-    display: flex;
-    background-color: rgba(100, 148, 237, 0.658);
-    height: 100%;
-    width: 24%;
+    width: 9.5em;
 }
 #right{
     box-sizing: border-box;
-    display: flex;
-    background-color: rgba(0, 128, 0, 0.555);
-    height: 100%;
-    width: 21%;
-    flex-direction: column;
+    width: 8.5em;
 }
 
 /* TOP Y BOT DERECHA */
 #topRight{
     box-sizing: border-box;
     display: flex;
-    background-color: hotpink;
-    width: 100%;
     height:40%;
     flex-direction: column;
     justify-content: space-around;
@@ -86,8 +72,6 @@ main{
 #botRight{
     box-sizing: border-box;
     display: flex;
-    background-color: rgb(148, 89, 118);
-    width: 100%;
     height: 60%;
     padding: .7em 0 .7em;
     flex-direction: column;
@@ -132,26 +116,27 @@ main{
 
 /* TOP Y BOT IZQUIERDA */
 #topLeft{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rebeccapurple;
     height: 50%;
-    width: 100%;
-}
-@font-face {
-    font-family: "DolceVita";
-    src: local("font/Dolce Vita Light.ttf");
+    padding: .5em 0 2.2em;
 }
 
-#textoArcade{
-    width: 50%;
-    font-size: 1.5em;
-    font-family: DolceVita ;
+#textoArcade2{
+    margin-top: -.3em;
 }
+.textoArcade{
+    font-size: 2em;
+    font-family: 'Dolce Vita Light', 'Allan', cursive;
+    text-align: center;
+}
+
 .speaker{
-    width: 3em;
-    height: 2em;
+    width: 2.5em;
+    height: .6em;
+    border-radius: 1em;
     background-color: black;
 }
