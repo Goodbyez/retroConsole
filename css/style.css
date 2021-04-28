@@ -22,7 +22,6 @@ body{
 main{
     all: unset;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-self: center; 
     border-radius: 20px;
@@ -34,8 +33,8 @@ main{
     height: 21.5em;
     background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);
     border-radius: 1em 1em;
-    border:  8px red;
-    border-style: ridge groove;
+    border:  8px rgb(231, 0, 0);
+    border-style:ridge groove;
     box-shadow: inset 0 0 30px 0 darkgoldenrod;
     display: flex;
     flex-direction: row;
@@ -45,9 +44,10 @@ main{
 #center{
     box-sizing: border-box;
     display: flex;
-    background-color: blue;
     height: 100%;
     width: 22em;
+    justify-content: center;
+    align-items: center;
 }
 
 #left{
@@ -81,11 +81,21 @@ main{
 
 /* BOTONES DERECHA */
 .whiteButton{
-    background-color: white;
-    height: 1.2em;
+    background: linear-gradient(14deg, rgba(230,230,230,1) 0%, rgba(254,254,254,1) 37%, rgba(255,255,255,1) 46%, rgba(230,230,230,1) 100%);    height: 1.2em;
     width: 2.2em;
     border-radius: 20px 20px;
-    border: 5px solid red;
+    box-shadow: 0em .2em .5em .2em darkslategray;
+    
+}
+.smallRedArea{
+    background-color: red;
+    height: 2em;
+    width: 2.8em;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset .1em .1em .2em 0em darkslategray;
 }
 
 .bigRedButton{
@@ -103,9 +113,8 @@ main{
     height: 3.4em;
     width: 3.4em;
     border-radius: 50%;
-    background:radial-gradient(circle, rgb(255, 254, 244) 0%, rgb(255, 231, 12) 50%, rgba(255,196,0,1) 100%);
+    background:radial-gradient(circle, rgb(255, 142, 142) 15%, rgb(255, 69, 69) 50%, rgb(231, 0, 0) 100%);
     box-shadow: .5em .5em 1em 0em darkslategray;
-
 }
 
 .managementWhiteButton{
@@ -116,16 +125,25 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+
+.icos{
+    width: .9em;
+    height: .9em;
+    margin-right: .5em;
+}
 .managementRedButton{
     display: flex;
     flex-direction: row;
     width: 60%;
     justify-content: space-between;
-    
 }
 .letterButton{
     align-self: flex-end;
     margin-bottom: .5em;
+    font-size: 1em;
+    font-family: 'Arial';
+    text-align: center;
+    color: rgb(56, 56, 56);
 }
 
 /* TOP Y BOT IZQUIERDA */
@@ -136,23 +154,7 @@ main{
     justify-content: space-around;
     align-items: center;
     height: 50%;
-    padding: .5em 0 2.2em;
-}
-
-#textoArcade2{
-    margin-top: -.3em;
-}
-.textoArcade{
-    font-size: 2em;
-    font-family: 'Dolce Vita Light', 'Allan', cursive;
-    text-align: center;
-}
-
-.speaker{
-    width: 2.5em;
-    height: .6em;
-    border-radius: 1em;
-    background-color: black;
+    padding: .7em 0 2.2em;
 }
 
 #botLeft{
@@ -164,11 +166,31 @@ main{
     padding-bottom: .9em;
 }
 
+#textoArcade2{
+    margin-top: -.3em;
+}
+.textoArcade{
+    font-size: 2em;
+    font-family: 'Dolce Vita Light', 'Allan', cursive;
+    text-align: center;
+    color: rgb(56, 56, 56);
+}
+
+.speaker{
+    width: 2.5em;
+    height: .6em;
+    border-radius: 1em;
+    background-color: rgb(80, 80, 80);
+    box-shadow: inset .1em .1em .3em 0.01em black;
+}
+
 #leftAreaButton{
     border-radius: 5em 0 0 5em;
     height: 3em;
     width: 3em;
     margin-left: .4em;
+    z-index: 3;
+    box-shadow: inset .1em .1em .1em 0em darkslategray;
 }
 
 #rightAreaButton{
@@ -176,7 +198,9 @@ main{
     border-radius: 0 5em 5em 0;
     height: 3em;
     width: 3em;
-    margin-right: .7em;   
+    margin-right: .7em;
+    z-index: 1;
+    box-shadow: inset -.1em .1em .1em 0em darkslategray;
 }
 
 #topBotAreaButtons{
@@ -188,6 +212,8 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: .4em 0;
+    z-index: 2;
+    box-shadow: inset 0em .1em .05em 0em darkslategray;
 }
 
 .colorAreaCross{
@@ -200,8 +226,21 @@ main{
 .smallRedButton{
     width: 2.4em;
     height: 2.4em;
-    background:radial-gradient(circle, rgb(255, 254, 244) 0%, rgb(255, 231, 12) 50%, rgba(255,196,0,1) 100%);;
+    background:radial-gradient(circle, rgb(255, 142, 142) 15%, rgb(255, 69, 69) 50%, rgb(231, 0, 0) 100%);
     border-radius: 50%;
     box-shadow: .1em .1em .5em 0em darkslategray;
 }
 
+/* CENTER SCREEN */
+#screen{
+    width: 100%;
+    height: 78%;
+    background-color: rgb(38, 38, 53);
+    border-radius: .5em;
+    box-shadow: inset 0em 0em .5em .4em black;
+}
+#screenReflections{
+    background: linear-gradient(14deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 17%, rgba(255,255,255,0) 20%, rgba(254,254,254,0) 23%, rgba(254,254,254,1) 25%, rgba(253,253,253,0) 27%, rgba(243,243,243,0) 78%, rgba(254,254,254,1) 80%, rgba(254,254,254,0) 82%, rgba(254,254,254,0) 85%, rgba(254,254,254,1) 87%, rgba(230,230,230,0) 89%);ckground: linear-gradient(14deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 20%, rgba(255,255,255,0) 25%, rgba(243,243,243,0) 67%, rgba(254,254,254,1) 71%, rgba(254,254,254,0) 74%, rgba(254,254,254,0) 84%, rgba(254,254,254,1) 86%, rgba(230,230,230,0) 89%);d: linear-gradient(14deg, rgba(255,255,255,0) 0%, rgba(254,254,254,1) 18%, rgba(255,255,255,1) 22%, rgba(243,243,243,0) 44%, rgba(254,254,254,0) 71%, rgba(254,254,254,1) 77%, rgba(230,230,230,0) 100%);    width: 100%;
+    height: 100%;
+    opacity: .1;
+}
