@@ -50,13 +50,13 @@
                 <div id="topRight">
                     <div class="managementWhiteButton">
                         <div class="smallRedArea">
-                            <div class="whiteButton"></div>
+                            <div class="whiteButton" ></div>
                         </div>
                         <img src="img/repeat.png" alt="Reset" id="repeat" class="icos">
                     </div>
                     <div class="managementWhiteButton">
                         <div class="smallRedArea">
-                            <div class="whiteButton"></div>
+                            <div class="whiteButton" onclick="play(1, 'bsoMute')"></div>
                         </div>
                         <img src="img/sound2.png" alt="Sonido On/Off" id="sound" class="icos">
                     </div>
@@ -83,14 +83,15 @@
                 </div>
             </div>
         </div>
-        
     </main>
-    <div id="outsideButtons" onclick="systemOn()">
+    <div id="outsideButtons">
         <div class="Buttons"></div>
         <div class="Buttons"></div>
         <div class="Buttons"></div>
         <div class="Buttons"></div>
     </div>
+    <audio id="audioPush" src="http://www.sonidosmp3gratis.com/sounds/haga-clic-en_6.mp3"></audio>
+    <audio id="bsoMute" src="http://www.sonidosmp3gratis.com/sounds/retro-atari-demo.mp3"></audio>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
