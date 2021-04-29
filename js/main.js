@@ -14,7 +14,7 @@ function pusher(elEvento) {
     if(evento.keyCode==65){pushButton('a', 'audioPush')}
     if(evento.keyCode==83){pushButton('s', 'audioPush')}
     if(evento.keyCode==68){pushButton('d', 'audioPush')}
-    if(evento.keyCode==86){play(1, 'bsoMute')}
+    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', 'audioWPush')}
 }
 function unPusher(elEvento2) {
     var evento = window.event || elEvento2;
@@ -24,6 +24,7 @@ function unPusher(elEvento2) {
     if(evento.keyCode==65){unPushButton('a')}
     if(evento.keyCode==83){unPushButton('s')}
     if(evento.keyCode==68){unPushButton('d')}
+    if(evento.keyCode==86){unPushButton('v')}
 }
 
 
