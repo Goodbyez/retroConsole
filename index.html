@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
     <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/dolce-vita-heavy" rel="stylesheet">
     <title>Console</title>
 </head>
 <body>
+    <!----
     <div id="ref">
         <img src="ref/consola2.jpeg">
     </div>
+    -->
     <main>
         <div id="firstPlate">
             <div id="left">
@@ -47,45 +49,45 @@
                         <div class="smallRedArea">
                             <div class="whiteButton"></div>
                         </div>
-                        <img src="img/repeat.png" id="repeat" class="icos">
+                        <img src="img/repeat.png" alt="Reset" id="repeat" class="icos">
                     </div>
                     <div class="managementWhiteButton">
                         <div class="smallRedArea">
                             <div class="whiteButton"></div>
                         </div>
-                        <img src="img/sound2.png" id="sound" class="icos">
+                        <img src="img/sound2.png" alt="Sonido On/Off" id="sound" class="icos">
                     </div>
                     <div class="managementWhiteButton">
                         <div class="smallRedArea">
                             <div class="whiteButton"></div>
                         </div>
-                        <img src="img/play.png" id="play" class="icos">
+                        <img src="img/play.png" alt="Play/Pause" id="play" class="icos">
                     </div>
                 </div>
                 <div id="botRight">
-                    <div class="managementRedButton">
-                        <div class="bigRedButton">
-                            <div class="yellowBigButton"></div>
+                    <div class="managementRedArea">
+                        <div class="bigRedArea">
+                            <div class="redBigButton" id="o" onclick="pushButton('o')"></div>
                         </div>
-                        <span class="letterButton">B</span>
+                        <span class="letterButton">O</span>
                     </div>
-                    <div class="managementRedButton">
-                        <div class="bigRedButton">
-                            <div class="yellowBigButton"></div>
+                    <div class="managementRedArea">
+                        <div class="bigRedArea">
+                            <div class="redBigButton" id="k" onclick="pushButton('k')"></div>
                         </div>
-                        <span class="letterButton">A</span>
+                        <span class="letterButton">K</span>
                     </div>
                 </div>
             </div>
         </div>
         
     </main>
-    <div id="outsideButtons">
+    <div id="outsideButtons" onclick="systemOn()">
         <div class="Buttons"></div>
         <div class="Buttons"></div>
         <div class="Buttons"></div>
         <div class="Buttons"></div>
     </div>
-  
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

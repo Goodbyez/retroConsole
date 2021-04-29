@@ -27,18 +27,19 @@ main{
     display: flex;
     justify-content: center;
     align-self: center; 
-    border-radius: 20px;
-    box-shadow: 0 0 20px 1px gray;
+    border-radius: 1em;
+    box-shadow: 0 0em 4em .1em rgba(77, 97, 97, 0.7);
 }
 
 #firstPlate {
     width: 39.5em;
     height: 21.5em;
-    background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);
+    background: linear-gradient(180deg, rgba(196,153,0,1) 0%, rgba(253,243,0,1) 28%, rgba(255,245,0,1) 55%, rgba(140,131,0,1) 100%);
+    /*background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);*/
     border-radius: 1em 1em;
-    border:  8px rgb(187, 0, 0);
+    border:  .5em rgb(187, 0, 0);
     border-style:ridge groove;
-    box-shadow: inset 0 0 30px 0 darkgoldenrod;
+    box-shadow: inset 0 0 1em .1em gray;
     display: flex;
     flex-direction: row;
     z-index: 2;
@@ -48,6 +49,11 @@ main{
     display: flex;
     flex-direction: column;
     margin-top: -4.5em;
+    width: .8em;
+}
+
+#outsideButtons:hover{
+    cursor: pointer;
 }
 
 .Buttons{
@@ -118,7 +124,7 @@ main{
     box-shadow: inset .1em .1em .2em 0em darkslategray;
 }
 
-.bigRedButton{
+.bigRedArea{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +135,7 @@ main{
     box-shadow: inset .1em .1em .2em 0em darkslategray;
 }
 
-.yellowBigButton{
+.redBigButton{
     height: 3.4em;
     width: 3.4em;
     border-radius: 50%;
@@ -150,8 +156,9 @@ main{
     width: .9em;
     height: .9em;
     margin-right: .5em;
+    opacity: .8;
 }
-.managementRedButton{
+.managementRedArea{
     display: flex;
     flex-direction: row;
     width: 60%;
@@ -163,7 +170,7 @@ main{
     font-size: 1em;
     font-family: 'Arial';
     text-align: center;
-    color: rgb(56, 56, 56);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* TOP Y BOT IZQUIERDA */
@@ -250,17 +257,33 @@ main{
     border-radius: 50%;
     box-shadow: 0em 0.2em .1em 0.05em rgb(141, 0, 0);
 }
+.smallRedButton:hover{
+    background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
+    cursor: pointer;
+}
 
 /* CENTER SCREEN */
-#screen{
+#screen {
     width: 100%;
     height: 78%;
-    background-color: rgb(38, 38, 53);
+    background: linear-gradient(45deg, rgb(0, 107, 93) 0%, rgba(1,148,75,1) 35%, rgba(0,106,50,1) 100%);
     border-radius: .5em;
     box-shadow: inset 0em 0em .5em .4em black;
+    filter: brightness(80%);
+    transition: 4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-#screenReflections{
-    background: linear-gradient(14deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 17%, rgba(255,255,255,0) 20%, rgba(254,254,254,0) 23%, rgba(254,254,254,1) 25%, rgba(253,253,253,0) 27%, rgba(243,243,243,0) 78%, rgba(254,254,254,1) 80%, rgba(254,254,254,0) 82%, rgba(254,254,254,0) 85%, rgba(254,254,254,1) 87%, rgba(230,230,230,0) 89%);ckground: linear-gradient(14deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 20%, rgba(255,255,255,0) 25%, rgba(243,243,243,0) 67%, rgba(254,254,254,1) 71%, rgba(254,254,254,0) 74%, rgba(254,254,254,0) 84%, rgba(254,254,254,1) 86%, rgba(230,230,230,0) 89%);d: linear-gradient(14deg, rgba(255,255,255,0) 0%, rgba(254,254,254,1) 18%, rgba(255,255,255,1) 22%, rgba(243,243,243,0) 44%, rgba(254,254,254,0) 71%, rgba(254,254,254,1) 77%, rgba(230,230,230,0) 100%);    width: 100%;
+#screen:hover{
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: brightness(140%);
+    cursor: pointer;
+}
+#screen:hover #screenReflections{
+    display: none;
+    transition: 2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+#screenReflections {
+    background: linear-gradient(45deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 17%, rgba(255,255,255,0) 20%, rgba(254,254,254,0) 23%, rgba(254,254,254,1) 25%, rgba(253,253,253,0) 27%, rgba(243,243,243,0) 78%, rgba(254,254,254,1) 80%, rgba(254,254,254,0) 82%, rgba(254,254,254,0) 85%, rgba(254,254,254,1) 87%, rgba(230,230,230,0) 89%);
     height: 100%;
-    opacity: .1;
+    opacity: 1;
+    filter:blur(.7em) brightness(100%);
 }
