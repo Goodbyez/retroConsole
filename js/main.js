@@ -12,24 +12,32 @@ function unPushButton(letter2, vHeigh2, vWidth2){
 
 
 function pusher(elEvento) {
+    let buttonsOK = '2.6em';
+    let buttonsWASD = '2.2em';
+    let buttonWhiteH = '0.9em';
+    let buttonWhiteW = '1.6em';
     var evento = window.event || elEvento;
-    if(evento.keyCode==79){pushButton('o', 'audioPush', '2.6em', '2.6em')}
-    if(evento.keyCode==75){pushButton('k', 'audioPush', '2.6em', '2.6em')}
-    if(evento.keyCode==87){pushButton('w', 'audioPush', '2em', '2em')}
-    if(evento.keyCode==65){pushButton('a', 'audioPush', '2em', '2em')}
-    if(evento.keyCode==83){pushButton('s', 'audioPush', '2em', '2em')}
-    if(evento.keyCode==68){pushButton('d', 'audioPush', '2em', '2em')}
-    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', 'audioWPush','0.9em', '1.6em')}
+    if(evento.keyCode==79){pushButton('o', 'audioPush', buttonsOK, buttonsOK)}
+    if(evento.keyCode==75){pushButton('k', 'audioPush', buttonsOK, buttonsOK)}
+    if(evento.keyCode==87){pushButton('w', 'audioPush', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==65){pushButton('a', 'audioPush', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==83){pushButton('s', 'audioPush', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==68){pushButton('d', 'audioPush', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', 'audioWPush', buttonWhiteH, buttonWhiteW)}
 }
 function unPusher(elEvento2) {
     var evento = window.event || elEvento2;
-    if(evento.keyCode==79){unPushButton('o', '3.4em', '3.4em')}
-    if(evento.keyCode==75){unPushButton('k', '3.4em', '3.4em')}
-    if(evento.keyCode==87){unPushButton('w', '2.4em', '2.4em')}
-    if(evento.keyCode==65){unPushButton('a', '2.4em', '2.4em')}
-    if(evento.keyCode==83){unPushButton('s', '2.4em', '2.4em')}
-    if(evento.keyCode==68){unPushButton('d', '2.4em', '2.4em')}
-    if(evento.keyCode==86){unPushButton('v', '1.2em', '2.2em')}
+    let buttonsOK = '3.4em';
+    let buttonsWASD = '2.8em';
+    let buttonWhiteH = '1.2em';
+    let buttonWhiteW = '2.2em';
+    if(evento.keyCode==79){unPushButton('o', buttonsOK, buttonsOK)}
+    if(evento.keyCode==75){unPushButton('k', buttonsOK, buttonsOK)}
+    if(evento.keyCode==87){unPushButton('w', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==65){unPushButton('a', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==83){unPushButton('s', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==68){unPushButton('d', buttonsWASD, buttonsWASD)}
+    if(evento.keyCode==86){unPushButton('v', buttonWhiteH, buttonWhiteW)}
 }
 
 
