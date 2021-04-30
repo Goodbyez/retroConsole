@@ -1,40 +1,35 @@
-function pushButton(letter, value2){
-    document.getElementById(letter).style.display ="none";
-    /*document.getElementById(letter).style.height ="2em";
-    document.getElementById(letter).style.width ="2em";*/
-    let audio = document.getElementById(value2);
+function pushButton(letter, valueSound, vHeigh, vWidth){
+    document.getElementById(letter).style.height =vHeigh;
+    document.getElementById(letter).style.width =vWidth;
+    let audio = document.getElementById(valueSound);
     audio.play();
 }
-function unPushButton(letter2){
-    document.getElementById(letter2).style.display ="flex";
-    /*document.getElementById(letter2).style.height = "3.4em";
-    document.getElementById(letter2).style.width = "3.4em";*/
+function unPushButton(letter2, vHeigh2, vWidth2){
+    document.getElementById(letter2).style.height = vHeigh2;
+    document.getElementById(letter2).style.width = vWidth2;
 }
-/*
-function getSizes(letter3){
-    let meh = document.getElementsByClassName(letter3)[0].height();
-    console.log(meh);
-}
-*/
+
+
+
 function pusher(elEvento) {
     var evento = window.event || elEvento;
-    if(evento.keyCode==79){/*getSizes('redBigButton')*/;pushButton('o', 'audioPush')}
-    if(evento.keyCode==75){pushButton('k', 'audioPush')}
-    if(evento.keyCode==87){pushButton('w', 'audioPush')}
-    if(evento.keyCode==65){pushButton('a', 'audioPush')}
-    if(evento.keyCode==83){pushButton('s', 'audioPush')}
-    if(evento.keyCode==68){pushButton('d', 'audioPush')}
-    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', 'audioWPush')}
+    if(evento.keyCode==79){pushButton('o', 'audioPush', '2.6em', '2.6em')}
+    if(evento.keyCode==75){pushButton('k', 'audioPush', '2.6em', '2.6em')}
+    if(evento.keyCode==87){pushButton('w', 'audioPush', '2em', '2em')}
+    if(evento.keyCode==65){pushButton('a', 'audioPush', '2em', '2em')}
+    if(evento.keyCode==83){pushButton('s', 'audioPush', '2em', '2em')}
+    if(evento.keyCode==68){pushButton('d', 'audioPush', '2em', '2em')}
+    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', 'audioWPush','0.9em', '1.6em')}
 }
 function unPusher(elEvento2) {
     var evento = window.event || elEvento2;
-    if(evento.keyCode==79){unPushButton('o')}
-    if(evento.keyCode==75){unPushButton('k')}
-    if(evento.keyCode==87){unPushButton('w')}
-    if(evento.keyCode==65){unPushButton('a')}
-    if(evento.keyCode==83){unPushButton('s')}
-    if(evento.keyCode==68){unPushButton('d')}
-    if(evento.keyCode==86){unPushButton('v')}
+    if(evento.keyCode==79){unPushButton('o', '3.4em', '3.4em')}
+    if(evento.keyCode==75){unPushButton('k', '3.4em', '3.4em')}
+    if(evento.keyCode==87){unPushButton('w', '2.4em', '2.4em')}
+    if(evento.keyCode==65){unPushButton('a', '2.4em', '2.4em')}
+    if(evento.keyCode==83){unPushButton('s', '2.4em', '2.4em')}
+    if(evento.keyCode==68){unPushButton('d', '2.4em', '2.4em')}
+    if(evento.keyCode==86){unPushButton('v', '1.2em', '2.2em')}
 }
 
 

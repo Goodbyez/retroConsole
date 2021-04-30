@@ -109,6 +109,7 @@ main{
 .whiteButton{
     background: linear-gradient(14deg, rgba(230,230,230,1) 0%, rgba(254,254,254,1) 37%, rgba(255,255,255,1) 46%, rgba(230,230,230,1) 100%);    height: 1.2em;
     width: 2.2em;
+    height: 1.2em;
     border-radius: 20px 20px;
     box-shadow: 0em .2em .5em .2em darkslategray;
     
