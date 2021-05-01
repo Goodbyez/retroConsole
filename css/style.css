@@ -37,8 +37,7 @@ main{
     background: linear-gradient(180deg, rgba(240,200,104,255) 0%, rgba(239,185,88,255) 28%, rgba(246,207,112,255) 55%, rgba(251,224,125,255) 100%);
     /*background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);*/
     border-radius: 1em 1em;
-    border:  .5em rgba(143,77,46,255);
-    border-style:ridge groove;
+    border:  .5em solid rgba(143,77,46,255);
     box-shadow: inset 0 0 .5em 0em darkslategray;
     display: flex;
     flex-direction: row;
@@ -105,53 +104,7 @@ main{
     align-items: center;
 }
 
-/* BOTONES DERECHA */
-.whiteButton{
-    background: linear-gradient(14deg, rgba(230,230,230,1) 0%, rgba(254,254,254,1) 37%, rgba(255,255,255,1) 46%, rgba(230,230,230,1) 100%);
-    height: 1.2em;
-    width: 2.2em;
-    border-radius: 20px 20px;
-    box-shadow: 0em .2em .5em .2em darkslategray,
-                inset 0em 0em .5em .1em rgb(161, 161, 161);
-}
-.whiteButton:hover{
-    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
-
-}
-.smallRedArea{
-    background-color: rgba(202,85,76,255);
-    height: 2em;
-    width: 2.8em;
-    border-radius: 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset .1em .1em .2em 0em darkslategray;
-}
-
-.bigRedArea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4em;
-    width: 4em;
-    border-radius: 50%;
-    background-color: rgba(202,85,76,255);
-    box-shadow: inset .1em .1em .2em 0em darkslategray;
-}
-
-.redBigButton{
-    height: 3.4em;
-    width: 3.4em;
-    border-radius: 50%;
-    background: rgba(224,90,54,255);
-    box-shadow: .5em .5em 1em 0em darkslategray,
-    inset 0 0 1.5em 0 brown;
-}
-.redBigButton:hover{
-    background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
-    cursor: pointer;
-}
+/* BOTONES BLANCOS DERECHA*/
 .managementWhiteButton{
     display: flex;
     flex-direction: row;
@@ -160,12 +113,54 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-
+.whiteButton{
+    background: linear-gradient(14deg, rgba(230,230,230,1) 0%, rgba(254,254,254,1) 37%, rgba(255,255,255,1) 46%, rgba(230,230,230,1) 100%);
+    height: 1.1em;
+    width: 2em;
+    border-radius: 5em 5em;
+    box-shadow: 0em .2em .5em .2em darkslategray,
+                inset 0em 0em .5em .1em rgb(161, 161, 161);
+}
+.whiteButton:hover{
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
+}
+.smallRedArea{
+    height: 2em;
+    width: 2.8em;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset .1em .1em .2em 0em darkslategray;
+}
 .icos{
     width: .9em;
     height: .9em;
     margin-right: .5em;
     opacity: .8;
+}
+
+/* BOTONES ROJOS DERECHA*/
+.bigRedArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    box-shadow: inset .1em .1em .2em 0em darkslategray;
+}
+
+.redBigButton{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    box-shadow: .5em .5em 1em 0em darkslategray,
+                inset 0 0 1.5em 0 rgb(202, 81, 59);
+}
+.redBigButton:hover{
+    background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
+    cursor: pointer;
 }
 .managementRedArea{
     display: flex;
@@ -226,7 +221,7 @@ main{
 /*  LEFT BOTTOM */
 #crossTop{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 #crossCenter{
     display: flex;
@@ -236,31 +231,31 @@ main{
 }
 #leftAreaButton{
     border-radius: 3em 0 0 3em;
-    box-shadow: inset .1em .1em .1em 0em darkslategray;
+    box-shadow: inset .05em .05em .05em 0em darkslategray;
     height: 3em;
-    width: 2.8em;
+    width: 2.5em;
     z-index: 2;
 }
 
 #rightAreaButton{
     border-radius: 0 5em 5em 0;
-    box-shadow: inset -.1em .1em .1em 0em darkslategray;
+    box-shadow: inset -.05em .05em .05em 0em darkslategray;
     height: 3em;
-    width: 2.8em;
+    width: 2.5em;
     z-index: 2;
 }
 
 #botAreaButton{
     border-radius: 0 0 5em 5em;
-    height: 2.8em;
+    height: 2.6em;
     width: 3.2em;
     z-index: 2;
 }
 
 #topAreaButton{
     border-radius: 5em 5em 0em 0;
-    box-shadow: inset 0em .2em 0.2em 0em darkslategray;
-    height: 2.8em;
+    box-shadow: inset 0em .05em 0.05em 0em darkslategray;
+    height: 2.6em;
     width: 3.2em;
     z-index: 2;
 }
@@ -271,20 +266,31 @@ main{
     z-index: 1;
 }
 
-.colorAreaCross{
+.buttonsAreaCross{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(202,85,76,255);
+}
+#w{
+    margin-bottom: -.5em;
+}
+#a{
+    margin-right: -.6em;
+}
+#s{
+    margin-top: -.5em;
+    z-index: 2;
+}
+#d{
+    margin-left: -.6em;
 }
 
 .smallRedButton{
-    width: 2.8em;
-    height: 2.8em;
-    background:rgba(224,90,54,255);
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
     box-shadow: 0.15em 0.15em .2em 0em darkslategray,
-                inset 0 0 1.5em 0 brown;
+                inset 0 0 1em 0 rgb(202, 81, 59);
 }
 
 .smallRedButton:hover{
@@ -294,11 +300,11 @@ main{
 
 /* CENTER SCREEN */
 #screen {
+    box-sizing: border-box;
     width: 100%;
     height: 78%;
     background: linear-gradient(45deg, rgb(0, 107, 93) 0%, rgba(1,148,75,1) 35%, rgba(0,106,50,1) 100%);
     border-radius: .5em;
-    box-shadow: inset 0em 0em 0em .4em rgb(116, 116, 116);
     filter: brightness(80%);
     transition: 2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -307,11 +313,23 @@ main{
     filter: brightness(140%);
     cursor: pointer;
 }
-/*
+#innerBorder{
+    box-sizing: border-box;
+    height: 100%;
+    border: .8em solid rgb(84, 92, 92);
+}
+
 #screenReflections {
     background: linear-gradient(45deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 17%, rgba(255,255,255,0) 20%, rgba(254,254,254,0) 23%, rgba(254,254,254,1) 25%, rgba(253,253,253,0) 27%, rgba(243,243,243,0) 78%, rgba(254,254,254,1) 80%, rgba(254,254,254,0) 82%, rgba(254,254,254,0) 85%, rgba(254,254,254,1) 87%, rgba(230,230,230,0) 89%);
     height: 100%;
     opacity: 1;
     filter:blur(.7em) brightness(100%);
 }
-*/
+
+.innerRed{
+    background-color: rgba(202,86,74,255);
+}
+
+.colorRedButtons{
+    background:rgb(255, 103, 76);
+}
