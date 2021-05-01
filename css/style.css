@@ -127,9 +127,13 @@ main{
     border-radius: 5em 5em;
     box-shadow: 0em .2em .5em .2em darkslategray,
                 inset 0em 0em .5em .1em rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(230,230,230, 0.4);
 }
 .whiteButton:hover{
-    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
+    background: radial-gradient(circle, rgb(126, 126, 126) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
 }
 .whiteButton:active{
     height: .9em ;
@@ -170,6 +174,10 @@ main{
     border-radius: 50%;
     box-shadow: .5em .5em 1em 0em darkslategray,
                 inset 0 0 1.5em 0 rgb(202, 81, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 103, 76);
 }
 .redBigButton:hover{
     background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
@@ -321,6 +329,10 @@ main{
     border-radius: 50%;
     box-shadow: 0.15em 0.15em .2em 0em darkslategray,
                 inset 0 0 1em 0 rgb(202, 81, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 103, 76);
 }
 
 .smallRedButton:hover{
@@ -473,9 +485,20 @@ main{
     height: 14em;
     border-radius: .4em;
     box-shadow: 0 0 .2em 0.2em rgb(207, 207, 207) ;
+}
+#screenLayer3{
+    margin-top: -.7em;
+    width: 16.5em;
+    height: 14em;
+    border-radius: .4em;
     z-index: 5;
     background-color: rgb(0, 49, 49);
     filter: brightness(80%);
+}
+#screenLayer3:hover{
+    background-color: rgb(1, 126, 126);
+    filter: brightness(100%);
+    transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 /*SCREEN BOT*/
@@ -505,6 +528,9 @@ main{
 }
 
 #sombreadoUP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 21.5em;
     height: 16.8em;
     margin-left: -100%;
