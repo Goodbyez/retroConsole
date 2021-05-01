@@ -11,17 +11,23 @@
     <title>Console</title>
 </head>
 <body>
+    <!--
     <div id="ref">
         <img src="ref/consola2.jpeg">
-    </div>
+    </div>-->
     <main>
         <div id="firstPlate">
             <div id="left">
                 <div id="topLeft">
-                    <span id="textoArcade1" class="textoArcade">ARCADE</span>
-                    <span id="textoArcade2" class="textoArcade">GAME</span>
-                    <div class="speaker"></div>
-                    <div class="speaker"></div>
+                    <div id="boxTexto">
+                        <span class="textoArcade">ARCADE</span>
+                        <span class="textoArcade">GAME</span>
+                    </div>
+                    <div id="boxSpeaker">
+                        <div class="speaker"></div>
+                        <div id="emptySpeaker"></div>
+                        <div class="speaker"></div>
+                    </div>
                 </div>
                 <div id="botLeft">
                     <div id="crossTop">
@@ -46,11 +52,42 @@
                 </div>
             </div>
             <div id="center">
+                <!--
                 <div id="screen">
                     <div id="innerBorder">
                         <div id="screenReflections"></div>
                     </div>
                 </div>
+                -->
+                <div id="base">
+                    <div id="topScreen">
+                        <div id="triangleTopLeft"></div>
+                        <div id="cubeTop"></div>
+                        <div id="triangleTopRight"></div>
+                    </div>
+                    <div id="centerScreen">
+                        <div id="centerLeft">
+                            <div id="cubeLeft"></div>
+                            <div id="triangleLeftBot"></div>
+                        </div>
+                        <div id="baseScreen">
+                            <div id="screenLayer1">
+                                <div id="screenLayer2"></div>
+                            </div>
+                        </div>
+                        <div id="centerRight">
+                            <div id="cubeRight"></div>
+                            <div id="triangleRightBot"></div>
+                        </div>
+                    </div>
+                    <div id="botScreen">
+                        <div id="triangleBotLeft"></div>
+                        <div id="cubeBot"></div>
+                        <div id="triangleBotRight"></div>
+                    </div>
+                </div>
+                <div id="sombreadoUP"></div>
+                
             </div>
             <div id="right">
                 <div id="topRight">
@@ -78,13 +115,13 @@
                         <div class="bigRedArea innerRed">
                             <div class="redBigButton colorRedButtons" id="o"></div>
                         </div>
-                        <span class="letterButton">O</span>
+                        <span class="letterButton">B</span>
                     </div>
                     <div class="managementRedArea">
                         <div class="bigRedArea innerRed">
                             <div class="redBigButton colorRedButtons" id="k"></div>
                         </div>
-                        <span class="letterButton">K</span>
+                        <span class="letterButton">A</span>
                     </div>
                 </div>
             </div>

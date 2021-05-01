@@ -27,10 +27,10 @@ function pusher(elEvento) {
 }
 function unPusher(elEvento2) {
     var evento = window.event || elEvento2;
-    let buttonsOK = '3.4em';
-    let buttonsWASD = '2.8em';
-    let buttonWhiteH = '1.2em';
-    let buttonWhiteW = '2.2em';
+    let buttonsOK = '3em';
+    let buttonsWASD = '2.5em';
+    let buttonWhiteH = '1.1em';
+    let buttonWhiteW = '2em';
     if(evento.keyCode==79){unPushButton('o', buttonsOK, buttonsOK)}
     if(evento.keyCode==75){unPushButton('k', buttonsOK, buttonsOK)}
     if(evento.keyCode==87){unPushButton('w', buttonsWASD, buttonsWASD)}
