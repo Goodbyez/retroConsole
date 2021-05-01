@@ -131,6 +131,10 @@ main{
 .whiteButton:hover{
     background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
 }
+.whiteButton:active{
+    height: .9em ;
+    width: 1.6em;
+}
 .smallRedArea{
     height: 2em;
     width: 2.8em;
@@ -147,6 +151,7 @@ main{
     margin-right: .5em;
     opacity: .8;
 }
+
 
 /* BOTONES ROJOS DERECHA*/
 .bigRedArea{
@@ -169,6 +174,10 @@ main{
 .redBigButton:hover{
     background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
     cursor: pointer;
+}
+.redBigButton:active{
+    height: 2.6em;
+    width: 2.6em;
 }
 .managementRedArea{
     display: flex;
@@ -318,7 +327,10 @@ main{
     background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
     cursor: pointer;
 }
-
+.smallRedButton:active{
+    height: 2.2em;
+    width: 2.2em;
+}
 /* CENTER SCREEN */
 /*
 #screen {
@@ -358,14 +370,13 @@ main{
 }
 
 #base{
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 78.5%;
     background-color: whitesmoke;
     border-radius: .5em;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 /*SCREEN TOP*/
@@ -464,7 +475,9 @@ main{
     box-shadow: 0 0 .2em 0.2em rgb(207, 207, 207) ;
     z-index: 5;
     background-color: rgb(0, 49, 49);
+    filter: brightness(80%);
 }
+
 /*SCREEN BOT*/
 #botScreen{
     display: flex;
@@ -491,7 +504,6 @@ main{
     border-color: transparent transparent transparent rgb(194, 194, 194);
 }
 
-/*SOMBREADO SCREEN*/
 #sombreadoUP{
     width: 21.5em;
     height: 16.8em;
@@ -499,4 +511,5 @@ main{
     z-index: 10;
     border-radius: .4em;
     box-shadow: inset 0 0 .5em .1em grey;
+    filter: blur(10%);
 }

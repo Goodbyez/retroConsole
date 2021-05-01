@@ -32,21 +32,21 @@
                 <div id="botLeft">
                     <div id="crossTop">
                         <div id="topAreaButton" class="buttonsAreaCross innerRed">
-                            <div class="smallRedButton colorRedButtons" id="w"></div>
+                            <div class="smallRedButton colorRedButtons" id="w" onclick="playVFX('audioPush')"></div>
                         </div>
                     </div>
                     <div id="crossCenter">
                         <div id="leftAreaButton" class="buttonsAreaCross innerRed">
-                            <div class="smallRedButton colorRedButtons" id="a"></div>
+                            <div class="smallRedButton colorRedButtons" id="a" onclick="playVFX('audioPush')"></div>
                         </div>
                         <div id="centerAreaButton" class="buttonsAreaCross innerRed"></div>
                         <div id="rightAreaButton" class="buttonsAreaCross innerRed">
-                            <div class="smallRedButton colorRedButtons" id="d"></div>
+                            <div class="smallRedButton colorRedButtons" id="d" onclick="playVFX('audioPush')"></div>
                         </div>
                     </div>
                     <div id="crossBot">
                         <div id="botAreaButton" class="buttonsAreaCross innerRed">
-                            <div class="smallRedButton colorRedButtons" id="s"></div>
+                            <div class="smallRedButton colorRedButtons" id="s" onclick="playVFX('audioPush')"></div>
                         </div>
                     </div>
                 </div>
@@ -93,19 +93,19 @@
                 <div id="topRight">
                     <div class="managementWhiteButton">
                         <div class="smallRedArea innerRed">
-                            <div class="whiteButton" ></div>
+                            <div class="whiteButton" onclick="playVFX('audioWPush')" ></div>
                         </div>
                         <img src="img/repeat.png" alt="Reset" id="repeat" class="icos">
                     </div>
                     <div class="managementWhiteButton">
                         <div class="smallRedArea innerRed">
-                            <div class="whiteButton" id="v" onclick="play(1, 'bsoMute')"></div>
+                            <div class="whiteButton" id="v" onclick="play(1, 'bsoMute'), playVFX('audioWPush')"></div>
                         </div>
                         <img src="img/sound2.png" alt="Sonido On/Off" id="sound" class="icos">
                     </div>
                     <div class="managementWhiteButton">
                         <div class="smallRedArea innerRed">
-                            <div class="whiteButton"></div>
+                            <div class="whiteButton" onclick="playVFX('audioWPush')"></div>
                         </div>
                         <img src="img/play.png" alt="Play/Pause" id="play" class="icos">
                     </div>
@@ -113,13 +113,13 @@
                 <div id="botRight">
                     <div class="managementRedArea">
                         <div class="bigRedArea innerRed">
-                            <div class="redBigButton colorRedButtons" id="o"></div>
+                            <div class="redBigButton colorRedButtons" onclick="playVFX('audioPush')" id="o"></div>
                         </div>
                         <span class="letterButton">B</span>
                     </div>
                     <div class="managementRedArea">
                         <div class="bigRedArea innerRed">
-                            <div class="redBigButton colorRedButtons" id="k"></div>
+                            <div class="redBigButton colorRedButtons" onclick="playVFX('audioPush')" id="k"></div>
                         </div>
                         <span class="letterButton">A</span>
                     </div>
