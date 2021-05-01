@@ -16,9 +16,9 @@ body{
     z-index: 4;
 }
 #ref img{
-    margin-top: 20px;
+    margin-top: 0em;
     margin-right: .5em;
-    opacity: 0;
+    opacity: 0.5;
     width: 60em;
 }
 
@@ -26,8 +26,9 @@ main{
     all: unset;
     display: flex;
     justify-content: center;
-    align-self: center; 
-    border-radius: 1em;
+    align-self: center;
+    flex-direction: column;
+    border-radius: 1em 1em 1.5em 1.5em/ 1em 1em 3em 3em;;
     box-shadow: 0 0em 4em .1em rgba(77, 97, 97, 0.7);
 }
 
@@ -37,11 +38,17 @@ main{
     background: linear-gradient(180deg, rgba(240,200,104,255) 0%, rgba(239,185,88,255) 28%, rgba(246,207,112,255) 55%, rgba(251,224,125,255) 100%);
     /*background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);*/
     border-radius: 1em 1em;
-    border:  .5em solid rgba(143,77,46,255);
+    border:  .5em solid rgba(202,86,74,255);
     box-shadow: inset 0 0 .5em 0em darkslategray;
     display: flex;
     flex-direction: row;
     z-index: 2;
+}
+#cajaInferior{
+    margin-top: -2em;
+    border-radius: 0 0 1.5em 1.5em/ 0 0 3em 3em;
+    height: 3em;
+    background: linear-gradient(0deg, rgba(180,89,79,1) 0%, rgba(190,129,122,1) 54%, rgba(209,209,209,1) 74%);
 }
 
 #outsideButtons{
@@ -58,10 +65,10 @@ main{
 .Buttons{
     width: .6em;
     height: 1.2em;
-    margin-left: -.4em;
+    margin-left: -.2em;
     z-index: 1;
-    background-color: rgba(143,77,46,255);
-    border-radius: 0 50% 50% 0;
+    background-color: rgba(202,86,74,255);
+    border-radius: 0 30% 80% 0;
 }
 
 
@@ -303,10 +310,8 @@ main{
     box-sizing: border-box;
     width: 100%;
     height: 78%;
-    background: linear-gradient(45deg, rgb(0, 107, 93) 0%, rgba(1,148,75,1) 35%, rgba(0,106,50,1) 100%);
-    border-radius: .5em;
-    filter: brightness(80%);
-    transition: 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: .8em;
+    border: .5em solid rgb(84, 92, 92);
 }
 #screen:hover{
     transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -315,8 +320,11 @@ main{
 }
 #innerBorder{
     box-sizing: border-box;
+    width: 100%;
     height: 100%;
-    border: .8em solid rgb(84, 92, 92);
+    background: linear-gradient(45deg, rgb(0, 107, 93) 0%, rgba(1,148,75,1) 35%, rgba(0,106,50,1) 100%);
+    filter: brightness(80%);
+    transition: 0 cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 #screenReflections {
