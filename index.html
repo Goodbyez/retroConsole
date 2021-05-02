@@ -95,7 +95,7 @@
                 <div id="topRight">
                     <div class="managementWhiteButton">
                         <div class="smallRedArea innerRed">
-                            <div class="whiteButton" onclick="playVFX('audioWPush')">R</div>
+                            <div class="whiteButton" id="r" onclick="playVFX('audioWPush')">R</div>
                         </div>
                         <img src="img/repeat.png" alt="Reset" id="repeat" class="icos">
                     </div>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="managementWhiteButton">
                         <div class="smallRedArea innerRed">
-                            <div class="whiteButton" onclick="playVFX('audioWPush')">P</div>
+                            <div class="whiteButton" id="p" onclick="playVFX('audioWPush')">P</div>
                         </div>
                         <img src="img/play.png" alt="Play/Pause" id="play" class="icos">
                     </div>
@@ -115,7 +115,7 @@
                 <div id="botRight">
                     <div class="managementRedArea">
                         <div class="bigRedArea innerRed">
-                            <div class="redBigButton colorRedButtons" onclick="playVFX('audioPush')" id="o">O</div>
+                            <div class="redBigButton colorRedButtons" onclick="playVFX('audioPush'), pushButton('o', '2.2em', '2.2em')" id="o">O</div>
                         </div>
                         <span class="letterButton">B</span>
                     </div>

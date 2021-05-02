@@ -36,7 +36,9 @@ function pusher(elEvento) {
     if(evento.keyCode==65){pushButton('a', buttonsWASD, buttonsWASD); playVFX(soundRButton)}
     if(evento.keyCode==83){pushButton('s', buttonsWASD, buttonsWASD); playVFX(soundRButton)}
     if(evento.keyCode==68){pushButton('d', buttonsWASD, buttonsWASD); playVFX(soundRButton)}
-    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', soundWButton, buttonWhiteH, buttonWhiteW)}
+    if(evento.keyCode==86){play(1, 'bsoMute'); pushButton('v', buttonWhiteH, buttonWhiteW); playVFX(soundWButton)}
+    if(evento.keyCode==82){pushButton('r', buttonWhiteH, buttonWhiteW); playVFX(soundWButton)}
+    if(evento.keyCode==80){pushButton('p', buttonWhiteH, buttonWhiteW); playVFX(soundWButton)}
 }
 function unPusher(elEvento2) {
     var evento = window.event || elEvento2;
@@ -51,6 +53,8 @@ function unPusher(elEvento2) {
     if(evento.keyCode==83){unPushButton('s', buttonsWASD, buttonsWASD)}
     if(evento.keyCode==68){unPushButton('d', buttonsWASD, buttonsWASD)}
     if(evento.keyCode==86){unPushButton('v', buttonWhiteH, buttonWhiteW)}
+    if(evento.keyCode==82){unPushButton('r', buttonWhiteH, buttonWhiteW)}
+    if(evento.keyCode==80){unPushButton('p', buttonWhiteH, buttonWhiteW)}
 }
 
 
