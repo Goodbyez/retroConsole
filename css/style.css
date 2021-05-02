@@ -131,6 +131,7 @@ main{
     justify-content: center;
     align-items: center;
     color: rgba(230,230,230, 0.4);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .whiteButton:hover{
     background: radial-gradient(circle, rgb(126, 126, 126) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
@@ -178,7 +179,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 103, 76);
  }
 .redBigButton:hover{
     background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
@@ -209,7 +209,8 @@ main{
     align-self: flex-end;
     margin-bottom: .5em;
     font-size: 1em;
-    font-family: 'Arial';
+    color: rgb(255, 103, 76);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -344,7 +345,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 103, 76);
 }
 
 .smallRedButton:hover{
@@ -391,6 +391,8 @@ main{
 
 .colorRedButtons{
     background:rgb(255, 103, 76);
+    color: rgb(255, 103, 76);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #base{
