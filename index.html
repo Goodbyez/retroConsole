@@ -5,15 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+    <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/dolce-vita-heavy" rel="stylesheet">
     <title>Console</title>
 </head>
 <body>
-    
+    <!--
+    <div id="ref">
+        <img src="ref/consola2.jpeg">
+    </div>-->
     <main>
-        <section id="left" class="carcasa"></section>
-        <section id="center" class="carcasa"></section>
-        <section id="right" class=carcasa></section>
+        <div id="firstPlate">
+            <div id="left">
+                <div id="topLeft">
+                    <div id="boxTexto">
+                        <span class="textoArcade">ARCADE</span>
+                        <span class="textoArcade">GAME</span>
+                    </div>
+                    <div id="boxSpeaker">
+                        <div class="speaker"></div>
+                        <div id="emptySpeaker"></div>
+                        <div class="speaker"></div>
+                    </div>
+                </div>
+                <div id="botLeft">
+                    <div id="crossTop">
+                        <div id="topAreaButton" class="buttonsAreaCross innerRed">
+                            <div class="smallRedButton colorRedButtons" id="w" onclick="playVFX('audioPush')">W</div>
+                        </div>
+                    </div>
+                    <div id="crossCenter">
+                        <div id="leftAreaButton" class="buttonsAreaCross innerRed">
+                            <div class="smallRedButton colorRedButtons" id="a" onclick="playVFX('audioPush')">A</div>
+                        </div>
+                        <div id="centerAreaButton" class="buttonsAreaCross innerRed"></div>
+                        <div id="rightAreaButton" class="buttonsAreaCross innerRed">
+                            <div class="smallRedButton colorRedButtons" id="d" onclick="playVFX('audioPush')">D</div>
+                        </div>
+                    </div>
+                    <div id="crossBot">
+                        <div id="botAreaButton" class="buttonsAreaCross innerRed">
+                            <div class="smallRedButton colorRedButtons" id="s" onclick="playVFX('audioPush')">S</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="center">
+                <!--
+                <div id="screen">
+                    <div id="innerBorder">
+                        <div id="screenReflections"></div>
+                    </div>
+                </div>
+                -->
+                <div id="base">
+                    <div id="topScreen">
+                        <div id="triangleTopLeft"></div>
+                        <div id="cubeTop"></div>
+                        <div id="triangleTopRight"></div>
+                    </div>
+                    <div id="centerScreen">
+                        <div id="centerLeft">
+                            <div id="cubeLeft"></div>
+                            <div id="triangleLeftBot"></div>
+                        </div>
+                        <div id="baseScreen">
+                            <div id="screenLayer1">
+                                <div id="screenLayer2"></div>
+                            </div>
+                        </div>
+                        <div id="centerRight">
+                            <div id="cubeRight"></div>
+                            <div id="triangleRightBot"></div>
+                        </div>
+                    </div>
+                    <div id="botScreen">
+                        <div id="triangleBotLeft"></div>
+                        <div id="cubeBot"></div>
+                        <div id="triangleBotRight"></div>
+                    </div>
+                </div>
+                <div id="sombreadoUP">
+                    <div id="screenLayer3"></div>
+                </div>
+                
+            </div>
+            <div id="right">
+                <div id="topRight">
+                    <div class="managementWhiteButton">
+                        <div class="smallRedArea innerRed">
+                            <div class="whiteButton" id="r" onclick="playVFX('audioWPush')">R</div>
+                        </div>
+                        <img src="img/repeat.png" alt="Reset" id="repeat" class="icos">
+                    </div>
+                    <div class="managementWhiteButton">
+                        <div class="smallRedArea innerRed">
+                            <div class="whiteButton" id="v" onclick="play(1, 'bsoMute'), playVFX('audioWPush')">V</div>
+                        </div>
+                        <img src="img/sound2.png" alt="Sonido On/Off" id="sound" class="icos">
+                    </div>
+                    <div class="managementWhiteButton">
+                        <div class="smallRedArea innerRed">
+                            <div class="whiteButton" id="p" onclick="playVFX('audioWPush')">P</div>
+                        </div>
+                        <img src="img/play.png" alt="Play/Pause" id="play" class="icos">
+                    </div>
+                </div>
+                <div id="botRight">
+                    <div class="managementRedArea">
+                        <div class="bigRedArea innerRed">
+                            <div class="redBigButton colorRedButtons" onclick="playVFX('audioPush'), pushButton('o', '2.2em', '2.2em')" id="o">O</div>
+                        </div>
+                        <span class="letterButton">B</span>
+                    </div>
+                    <div class="managementRedArea">
+                        <div class="bigRedArea innerRed">
+                            <div class="redBigButton colorRedButtons" onclick="playVFX('audioPush')" id="k">K</div>
+                        </div>
+                        <span class="letterButton">A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cajaInferior"></div>
     </main>
-  
+    <div id="outsideButtons">
+        <div class="Buttons"></div>
+        <div class="Buttons"></div>
+        <div class="Buttons"></div>
+        <div class="Buttons"></div>
+    </div>
+    <audio id="audioPush" src="http://www.sonidosmp3gratis.com/sounds/haga-clic-en_6.mp3"></audio>
+    <audio id="bsoMute" src="http://www.sonidosmp3gratis.com/sounds/retro-atari-demo.mp3"></audio>
+    <audio id="audioWPush" src="http://www.sonidosmp3gratis.com/sounds/facebook-pop.mp3"></audio>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

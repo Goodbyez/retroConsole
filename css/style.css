@@ -1,30 +1,552 @@
 body{
     all: unset;
-    background-color: black;
+    background-color: lightgrey;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+}
+
+#ref{
+    display: flex;
+    position: fixed;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 4;
+}
+#ref img{
+    margin-top: 0em;
+    margin-right: .5em;
+    opacity: 0;
+    width: 60em;
 }
 
 main{
     all: unset;
     display: flex;
-    flex-wrap: wrap;
-    width: 60vw;
     justify-content: center;
-    align-self: center; 
+    align-self: center;
+    flex-direction: column;
+    border-radius: 1em 1em 1.5em 1.5em/ 1em 1em 3em 3em;;
+    box-shadow: 0 0 4em .1em rgba(77, 97, 97, 0.7);
 }
-.carcasa{
-    height: 40em;
-    background-color: red;
-    flex-grow: 1;
+
+#firstPlate {
+    width: 40em;
+    height: 21.5em;
+    background: linear-gradient(180deg, rgba(240,200,104,255) 0%, rgba(239,185,88,255) 28%, rgba(246,207,112,255) 55%, rgba(251,224,125,255) 100%);
+    /*background: radial-gradient(circle, rgba(255,239,0,1) 0%, rgba(255,196,0,1) 100%);*/
+    border-radius: 1em 1em;
+    border:  .5em solid rgba(202,86,74,255);
+    box-shadow: inset 0 0 .5em 0em darkslategray;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+#cajaInferior{
+    margin-top: -2em;
+    border-radius: 0 0 1.5em 1.5em/ 0 0 3em 3em;
+    height: 3em;
+    background: linear-gradient(0deg, rgba(180,89,79,1) 0%, rgba(190,129,122,1) 54%, rgba(209,209,209,1) 74%);
+}
+
+#outsideButtons{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5.7em;
+    width: .8em;
+}
+
+#outsideButtons:hover{
+    cursor: pointer;
+}
+
+.Buttons{
+    width: .6em;
+    height: 1.1em;
+    margin-left: -.3em;
+    z-index: 1;
+    background-color: rgba(202,86,74,255);
+    border-radius: 0 45% 80% 0;
+}
+
+
+/* LEFT CENTER Y RIGHT GENERAL */
+#center{
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    width: 21.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+#left{
+    box-sizing: border-box;
+    width: 9.8em;
 }
 #right{
-    background-color: blue;
+    box-sizing: border-box;
+    width: 8.5em;
 }
-#left{
-    background-color: green;
+
+/* TOP Y BOT DERECHA */
+#topRight{
+    box-sizing: border-box;
+    display: flex;
+    height:40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.3em;
 }
-#center {
-    width: 20em;
+#botRight{
+    box-sizing: border-box;
+    display: flex;
+    height: 60%;
+    padding: .7em 0 .7em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* BOTONES BLANCOS DERECHA*/
+.managementWhiteButton{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.whiteButton{
+    background: linear-gradient(14deg, rgba(230,230,230,1) 0%, rgba(254,254,254,1) 37%, rgba(255,255,255,1) 46%, rgba(230,230,230,1) 100%);
+    height: 1.1em;
+    width: 2em;
+    border-radius: 5em 5em;
+    box-shadow: 0em .2em .5em .2em darkslategray,
+                inset 0em 0em .5em .1em rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(230,230,230, 0.4);
+}
+.whiteButton:hover{
+    background: radial-gradient(circle, rgb(126, 126, 126) 0%, rgb(210, 210, 210) 33%, rgb(138, 138, 138) 66%, rgb(117, 117, 117) 100%);
+    cursor: pointer;
+}
+.whiteButton:active{
+    height: .9em;
+    width: 1.6em;
+}
+.smallRedArea{
+    height: 2em;
+    width: 2.8em;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset .1em .1em .2em 0em darkslategray;
+}
+
+.icos{
+    width: .9em;
+    height: .9em;
+    margin-right: .5em;
+    opacity: .8;
+}
+
+
+/* BOTONES ROJOS DERECHA*/
+.bigRedArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    box-shadow: inset .1em .1em .2em 0em darkslategray;
+}
+
+.redBigButton{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    box-shadow: .5em .5em 1em 0em darkslategray,
+                inset 0 0 1.5em 0 rgb(202, 81, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 103, 76);
+ }
+.redBigButton:hover{
+    background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0%   {height: 3em;    width: 3em;}
+    25%  {height: 2.4em;    width: 2.4em;}
+    50%  {height: 3em;    width: 3em;}
+    75% {height: 2.4em;    width: 2.4em;}
+    100% {height: 3em;    width: 3em;}
+}
+.redBigButton:active{
+    height: 2.6em;    width: 2.6em;
+}
+.managementRedArea{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+.letterButton{
+    align-self: flex-end;
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-family: 'Arial';
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* TOP Y BOT IZQUIERDA */
+#topLeft{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    padding: .7em 0 2.2em;
+    margin-left: 1em;
+}
+
+#botLeft{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    padding-bottom: 1.2em;
+}
+
+/* LEFT TOP */
+#boxTexto{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: .2em;
+}
+.textoArcade{
+    margin-left: -.2em;
+    font-size: 2em;
+    font-family: 'Dolce Vita Light', 'Allan', cursive;
+    text-align: center;
+    color: rgb(56, 56, 56);
+}
+
+#boxSpeaker{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: .5em;
+}
+#emptySpeaker{
+    height: 1em;
+}
+
+.speaker{
+    width: 2.5em;
+    height: .6em;
+    border-radius: 1em;
+    background-color: rgb(80, 80, 80);
+    box-shadow: inset .1em .1em .3em 0.01em black;
+}
+
+/*  LEFT BOTTOM */
+#crossTop{
+    display: flex;
+    justify-content: center;
+}
+#crossCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#leftAreaButton{
+    border-radius: 3em 0 0 3em;
+    box-shadow: inset .05em .05em .05em 0em darkslategray;
+    height: 3em;
+    width: 2.5em;
+    z-index: 2;
+}
+
+#rightAreaButton{
+    border-radius: 0 5em 5em 0;
+    box-shadow: inset -.05em .05em .05em 0em darkslategray;
+    height: 3em;
+    width: 2.5em;
+    z-index: 2;
+}
+
+#botAreaButton{
+    border-radius: 0 0 5em 5em;
+    height: 2.4em;
+    width: 3.2em;
+    z-index: 2;
+}
+
+#topAreaButton{
+    border-radius: 5em 5em 0em 0;
+    box-shadow: inset 0em .05em 0.05em 0em darkslategray;
+    height:2.4em;
+    width: 3.2em;
+    z-index: 2;
+}
+
+#centerAreaButton{
+    width: 3.2em;
+    height: 3.2em;
+    z-index: 1;
+}
+
+.buttonsAreaCross{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#w{
+    margin-bottom: -.5em;
+}
+#a{
+    margin-right: -.6em;
+}
+#s{
+    margin-top: -.5em;
+    z-index: 2;
+}
+#d{
+    margin-left: -.6em;
+}
+
+.smallRedButton{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    box-shadow: 0.15em 0.15em .2em 0em darkslategray,
+                inset 0 0 1em 0 rgb(202, 81, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 103, 76);
+}
+
+.smallRedButton:hover{
+    background:radial-gradient(circle, rgb(214, 58, 58) 15%, rgb(192, 12, 12) 50%, rgb(92, 1, 1) 100%);
+    cursor: pointer;
+}
+.smallRedButton:active{
+    height: 2.2em;
+    width: 2.2em;
+}
+/* CENTER SCREEN */
+/*
+#screen {
+    box-sizing: border-box;
+    width: 100%;
+    height: 78%;
+    border-radius: .8em;
+    border: .5em solid rgb(84, 92, 92);
+}
+#screen:hover{
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: brightness(140%);
+    cursor: pointer;
+}
+#innerBorder{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(0, 107, 93) 0%, rgba(1,148,75,1) 35%, rgba(0,106,50,1) 100%);
+    filter: brightness(80%);
+    transition: 0 cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#screenReflections {
+    background: linear-gradient(45deg, rgba(255,255,255,0) 15%, rgba(254,254,254,1) 17%, rgba(255,255,255,0) 20%, rgba(254,254,254,0) 23%, rgba(254,254,254,1) 25%, rgba(253,253,253,0) 27%, rgba(243,243,243,0) 78%, rgba(254,254,254,1) 80%, rgba(254,254,254,0) 82%, rgba(254,254,254,0) 85%, rgba(254,254,254,1) 87%, rgba(230,230,230,0) 89%);
+    height: 100%;
+    opacity: 1;
+    filter:blur(.7em) brightness(100%);
+}
+*/
+.innerRed{
+    background-color: rgba(202,86,74,255);
+}
+
+.colorRedButtons{
+    background:rgb(255, 103, 76);
+}
+
+#base{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 78.5%;
+    background-color: whitesmoke;
+    border-radius: .5em;
+    overflow: hidden;   
+}
+
+/*SCREEN TOP*/
+#topScreen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: .35em;
+    z-index: 3;
+}
+#triangleTopLeft{
+    border-style: solid;
+    border-width: 0 .35em .35em 0;
+    border-color: transparent rgb(154, 154, 154) transparent transparent;
+}
+#cubeTop{
+    height: .35em;
+    flex-grow: 1;
+    background-color: rgb(154, 154, 154);
+}
+#triangleTopRight{
+    border-style: solid;
+    border-width: .35em .35em 0 0;
+    border-color: rgb(154, 154, 154) transparent transparent transparent;
+}
+/*SCREEN CENTER LEFT*/
+#centerLeft{
+    display: flex;
+    flex-direction: column;
+    height: 110%;
+    width: .35em;
+    z-index: 1;
+}
+#cubeLeft{
+    margin-top: .4em;
+    height: 16em;
+    width: .35em;
+    background-color: rgb(194, 194, 194);
+}
+#triangleLeftBot{
+    border-style: solid;
+    border-width: .7em .35em 0 0;
+    border-color: rgb(194, 194, 194) transparent transparent transparent;
+}
+/*SCREEN CENTER RIGHT*/
+#centerRight{
+    display: flex;
+    flex-direction: column;
+    height: 110%;
+    width: .35em;
+    z-index: 1;
+}
+#cubeRight{
+    margin-top: .4em;
+    height: 16em;
+    width: .35em;
+    background-color: rgb(194, 194, 194);
+}
+#triangleRightBot{
+    border-style: solid;
+    border-width: 0 .35em .7em 0;
+    border-color: transparent rgb(194, 194, 194) transparent transparent;
+}
+/*SCREEN CENTER*/
+#centerScreen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 93%;
+    width: 100%;
+    z-index: 2;
+}
+#baseScreen{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;  
+}
+#screenLayer1{
+    display: flex;
+    justify-content:center;
+    padding-top: 0.2em;
+    width: 17em;
+    height: 14.5em;
+    border-radius: .4em;
+    border: 0.01em solid rgb(207, 207, 207);
+    box-shadow: inset 0 -.1em .1em 0em rgb(207, 207, 207);
+    z-index: 5;
+}
+#screenLayer2{
+    width: 16.5em;
+    height: 14em;
+    border-radius: .4em;
+    box-shadow: 0 0 .2em 0.2em rgb(207, 207, 207) ;
+}
+#screenLayer3{
+    margin-top: -.75em;
+    width: 16.5em;
+    height: 14em;
+    border-radius: .4em;
+    z-index: 5;
+    background: linear-gradient(45deg, rgb(0, 107, 93) 0%, rgba(1,148,75,1) 35%, rgba(0,106,50,1) 100%);
+    filter: brightness(80%);
+}
+#screenLayer3:hover{
+    filter: brightness(140%);
+    transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/*SCREEN BOT*/
+#botScreen{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: .9em;
+    z-index: 3;
+}
+#triangleBotLeft{
+    border-style: solid;
+    border-width: 0 0 .9em .5em;
+    border-color: transparent transparent rgb(194, 194, 194) transparent;
+
+}
+#cubeBot{
+    height: .9em;
+    flex-grow: 1;
+    background-color: rgb(194, 194, 194);
+
+}
+#triangleBotRight{
+    border-style: solid;
+    border-width: .9em 0 0 .5em;
+    border-color: transparent transparent transparent rgb(194, 194, 194);
+}
+
+#sombreadoUP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.5em;
+    height: 16.8em;
+    margin-left: -100%;
+    z-index: 10;
+    border-radius: .4em;
+    box-shadow: inset 0 0 .5em .1em grey;
+    filter: blur(10%);
 }
