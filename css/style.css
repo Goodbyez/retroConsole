@@ -233,10 +233,15 @@ main{
     flex-direction: column;
     padding-top: .2em;
 }
+@font-face {
+    font-family: "DolceVita";
+    src: url("/font/DolceVitaLight.ttf");
+}
+
 .textoArcade{
     margin-left: -.2em;
     font-size: 2em;
-    font-family: 'Dolce Vita Light', 'Allan', cursive;
+    font-family: 'Dolce Vita Light', 'Allan', 'DolceVita', cursive;
     text-align: center;
     color: rgb(56, 56, 56);
 }
