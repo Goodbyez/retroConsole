@@ -15,9 +15,10 @@ Proyecto realizado para la BOOTCAMP FULL STACK DEVELOPER VLC 04/2021.
 
 ## Detalles
 
-La consola es una ARCADE GAME similar a la Nintendo GAME & WATCH
+La consola es una ARCADE GAME similar a la Nintendo GAME & WATCH:
+
 <p align="center">
-  <img width="460" height="300" src="https://static.xuroa.com/image/e5dcd6c9/b9f6/4c2c/9b1e/260cfbf2dfeb.jpeg:_square:m">
+  <img width="auto" height="300" src="https://static.xuroa.com/image/e5dcd6c9/b9f6/4c2c/9b1e/260cfbf2dfeb.jpeg:_square:m">
 </p>
 
 
