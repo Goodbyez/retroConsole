@@ -1,5 +1,9 @@
 # Diseño en HTML y CSS de una consola retro
 
+- Start date: 28 April 2021
+- Delivery date: 2 May 2021
+- Dedicated time: <30 hours 
+
 Diseño de una consola retro usando HTML5 y CSS3.
 Proyecto realizado para la BOOTCAMP FULL STACK DEVELOPER VLC 04/2021.
 
