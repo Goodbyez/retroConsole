@@ -7,7 +7,7 @@
 Diseño de una consola retro usando HTML5 y CSS3.
 Proyecto realizado para la BOOTCAMP FULL STACK DEVELOPER VLC 04/2021.
 
-https://vicenteaparicio.github.io/retroConsole/
+https://vicenteaparicio.github.io/FSD_ConsoleRetro/
 
 ## Editor:
     - Visual Studio Code
